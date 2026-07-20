@@ -40,6 +40,10 @@ I did not invent numbers anywhere your resume didn't already state one — this 
 
 `/assets/chem-logo.png` and `/assets/cdsc-logo.jpg` — your two company logos. The portfolio's accent color (a refined brass/gold) is derived from the CHEM Tourist logo's gold tones; CDSC's orange is used only within its own profile block. Full rationale in `design-guidelines.md`.
 
+## Live site
+
+`/site` is a real React + Tailwind CSS implementation of this portfolio (Vite, TypeScript), built on this same content — see `site/README.md` for design rationale and how to run it. All copy lives in one file, `site/src/data/portfolio.ts`, so updating a fact updates every section at once.
+
 ## Visual preview
 
 A design mockup of the cover page and executive dashboard, now styled with the gold accent pulled from your CHEM Tourist logo, is available as a live preview — ask if you'd like the link resent.

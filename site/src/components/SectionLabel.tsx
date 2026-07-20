@@ -1,0 +1,10 @@
+export default function SectionLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="mb-8 flex items-center gap-3.5">
+      <p className="font-data text-[11px] uppercase tracking-[0.16em] text-muted whitespace-nowrap">
+        {children}
+      </p>
+      <span className="h-px flex-1 bg-rule" />
+    </div>
+  );
+}
