@@ -8,14 +8,19 @@ Direction: management-consulting-firm aesthetic — minimalist, high white space
 - **Hierarchy:** Maximum 3 type sizes per page (title, section header, body). Use weight and spacing for hierarchy before you reach for size.
 
 ## Color Palette
-Recommended: a deep neutral base with one confident accent — avoids looking like a template.
 
+You sent both company logos — CHEM Tourist and Transport (gold/amber, airplane-in-circle mark) and CDSC Industrial Supply (bright orange-red and black wordmark). Neither was designed as a *personal* executive brand, and running both full-saturation logo colors on one portfolio would fight each other, so the system below borrows and refines the CHEM Tourist gold — your flagship, highest-visibility business — as the portfolio's single accent, and reserves the CDSC orange strictly for CDSC's own profile block.
+
+**Primary portfolio palette (personal/executive documents — resume, CV, cover, dashboard):**
 - **Primary (text/structure):** Charcoal / near-black — `#1A1D21`
-- **Background:** Warm off-white — `#FAFAF8` (avoid pure white; softer on print and screen)
-- **Accent (use sparingly — section markers, stat highlights, dividers):** Deep forest green `#1F3D2B` or deep navy `#1B2A4A` — both read as "logistics/trust" without being generic corporate blue. If you have existing brand colors from your current website or company materials, use those instead and I'll align this system to them.
+- **Background:** Warm off-white — `#FAFAF8`
+- **Accent — refined brass/gold** (desaturated from the CHEM Tourist logo's `#F1C25A` / `#A5600D` for print elegance, so it reads as premium rather than glossy): `#9C7A2E`, with a deeper shade `#6E551F` for small text on light backgrounds
 - **Secondary/muted:** Warm gray `#6B6A66` for captions, metadata, page numbers
 
-Avoid: bright primary blue, gradient backgrounds, more than one accent color, red (reads as "warning" in a safety-focused transport business).
+**CDSC-specific accent (used only within the CDSC Industrial Supply profile block in `business-portfolio.md`, e.g., a small tag or divider):**
+- Orange `#E0480A` (refined from the logo's `#FF4000`), paired with black `#000000` — never mixed with the gold accent on the same page
+
+Avoid: bright primary blue, gradient backgrounds, running the gold and orange accents together, red as a general accent (reads as "warning" in a safety-focused transport business — the CDSC orange is the one deliberate exception, confined to its own section).
 
 ## Layout Principles
 - Generous margins (minimum 0.85in / 22mm on print documents)
@@ -24,11 +29,16 @@ Avoid: bright primary blue, gradient backgrounds, more than one accent color, re
 - Timeline sections: vertical line with year markers on the left, content indented right
 - Stat/dashboard tiles: equal-width grid, generous internal padding, number in large weight, label in small-caps below
 
+## Brand Assets Received
+Both company logos are saved in `/assets`: `chem-logo.png` (CHEM Tourist and Transport Services OPC) and `cdsc-logo.jpg` (CDSC Industrial Supply). Use them as small marks next to each company's entry in the business portfolio section — not blown up large, and not both on the same page as a "featured" logo, to keep the personal executive brand (not a specific company's brand) as the primary identity of the overall portfolio.
+
 ## Icon Style
 Thin-line (1.5px stroke) icon set, single color matching the accent — e.g., Phosphor Icons or Lucide. No filled/glyph icons, no multi-color icon packs, no emoji.
 
 ## Photography Style
 Professional headshot: neutral or softly blurred background, direct eye contact, business-appropriate attire, natural lighting preferred over harsh studio flash. If a fleet/operations photo is available for the business portfolio pages, use a clean wide shot (not a phone snapshot) — this does more to establish credibility than any stock photo would.
+
+**No headshot yet:** the cover page works without one — a typographic cover (name set large in the display serif, gold rule, tagline) reads as intentional and consulting-firm grade rather than incomplete, and it's the safer choice over a placeholder gray circle. Swap in a headshot later without changing the rest of the layout.
 
 ## Page Structure (Full Portfolio)
 1. Cover page (name, title, tagline, contact, QR code to portfolio/LinkedIn)

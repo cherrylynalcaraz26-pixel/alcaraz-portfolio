@@ -13,8 +13,7 @@ This folder contains the executive portfolio deliverables, now built on your rea
 ## What's still a placeholder
 
 - **LinkedIn URL / website / portfolio URL** — needed on every document's contact line
-- **Photo** — for the cover page
-- **Brand colors** — using the recommended palette in `design-guidelines.md` unless you have existing brand colors to match
+- **Photo** — you sent both company logos (CHEM Tourist and CDSC Industrial Supply, now in `/assets`), not a headshot. The cover design works without one — see the typographic-cover note in `design-guidelines.md` — so this isn't blocking, just something to add later if you want it.
 - **Exact figures** where your resume used qualifiers rather than numbers — e.g., number of corporate route contracts, exact revenue managed across the portfolio, exact % reduction in overtime/idle time from the dispatch restructure (this is your strongest ROI story — a specific number here would be high-impact)
 - **CDSC Industrial Supply founding year**
 - **Skills proficiency self-ratings** (1-5 scale) in `business-portfolio.md`
@@ -37,9 +36,13 @@ I did not invent numbers anywhere your resume didn't already state one — this 
 | `business-portfolio.md` | Company profiles, core competencies matrix, quantified achievements, 3 case studies, executive dashboard, leadership philosophy |
 | `design-guidelines.md` | Fonts, color palette, layout, print/PDF specs for the final visual document |
 
+## Brand assets
+
+`/assets/chem-logo.png` and `/assets/cdsc-logo.jpg` — your two company logos. The portfolio's accent color (a refined brass/gold) is derived from the CHEM Tourist logo's gold tones; CDSC's orange is used only within its own profile block. Full rationale in `design-guidelines.md`.
+
 ## Visual preview
 
-A design mockup of the cover page and executive dashboard (typography, color, layout direction) is available as a live preview — ask if you'd like the link resent, or an updated version now that real figures are in.
+A design mockup of the cover page and executive dashboard, now styled with the gold accent pulled from your CHEM Tourist logo, is available as a live preview — ask if you'd like the link resent.
 
 ## Recommended next step
 
