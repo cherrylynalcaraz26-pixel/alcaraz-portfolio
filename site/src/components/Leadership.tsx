@@ -4,7 +4,11 @@ import SectionLabel from "./SectionLabel";
 
 export default function Leadership() {
   return (
-    <section id="leadership" className="mx-auto max-w-sheet px-8 py-16">
+    <section
+      id="leadership"
+      className="fade-up mx-auto max-w-sheet px-8 py-16"
+      style={{ animationDelay: "0.35s" }}
+    >
       <SectionLabel icon={Quote}>Leadership Philosophy</SectionLabel>
       <div className="gradient-accent rounded-2xl p-8 text-white sm:p-10">
         <Quote size={32} className="opacity-70" />

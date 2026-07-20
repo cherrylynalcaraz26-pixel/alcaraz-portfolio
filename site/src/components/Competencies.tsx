@@ -4,7 +4,7 @@ import SectionLabel from "./SectionLabel";
 
 export default function Competencies() {
   return (
-    <section className="mx-auto max-w-sheet px-8 py-16">
+    <section className="fade-up mx-auto max-w-sheet px-8 py-16" style={{ animationDelay: "0.1s" }}>
       <SectionLabel icon={Layers}>Core Competencies</SectionLabel>
       <div className="grid gap-8 sm:grid-cols-3">
         {competencyGroups.map((group) => (

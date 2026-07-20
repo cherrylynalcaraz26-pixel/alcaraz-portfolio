@@ -27,7 +27,7 @@ function initials(name: string) {
 
 function BusinessCard({ b }: { b: BusinessEntity }) {
   return (
-    <article className="overflow-hidden rounded-2xl border border-rule bg-paper-raised shadow-sm">
+    <article className="overflow-hidden rounded-2xl border border-rule bg-paper-raised shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
       <div className="gradient-accent h-1.5 w-full" />
       <div className="p-6">
         <div className="flex items-start justify-between gap-4">
@@ -71,7 +71,11 @@ function BusinessCard({ b }: { b: BusinessEntity }) {
 
 export default function BusinessPortfolio() {
   return (
-    <section id="businesses" className="mx-auto max-w-sheet px-8 py-16">
+    <section
+      id="businesses"
+      className="fade-up mx-auto max-w-sheet px-8 py-16"
+      style={{ animationDelay: "0.25s" }}
+    >
       <SectionLabel icon={Building2}>Business Portfolio</SectionLabel>
       <div className="grid gap-5 sm:grid-cols-2">
         {businesses.map((b) => (

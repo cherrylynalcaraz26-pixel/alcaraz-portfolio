@@ -3,7 +3,11 @@ import { profile } from "../data/portfolio";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="border-t border-rule px-8 py-16">
+    <footer
+      id="contact"
+      className="fade-up border-t border-rule px-8 py-16"
+      style={{ animationDelay: "0.45s" }}
+    >
       <div className="mx-auto max-w-sheet">
         <div className="gradient-accent rounded-2xl p-8 text-white sm:p-12">
           <p className="font-display text-4xl font-extrabold sm:text-5xl">Let&rsquo;s talk.</p>

@@ -4,7 +4,7 @@ import SectionLabel from "./SectionLabel";
 
 export default function Timeline() {
   return (
-    <section className="mx-auto max-w-sheet px-8 py-16">
+    <section className="fade-up mx-auto max-w-sheet px-8 py-16" style={{ animationDelay: "0.2s" }}>
       <SectionLabel icon={Clock}>Professional Timeline</SectionLabel>
       <div className="-mx-8 overflow-x-auto px-8 pb-2">
         <ol className="flex min-w-max gap-5">

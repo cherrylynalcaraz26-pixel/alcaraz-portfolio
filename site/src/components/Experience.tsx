@@ -4,7 +4,11 @@ import SectionLabel from "./SectionLabel";
 
 export default function Experience() {
   return (
-    <section id="experience" className="mx-auto max-w-sheet px-8 py-16">
+    <section
+      id="experience"
+      className="fade-up mx-auto max-w-sheet px-8 py-16"
+      style={{ animationDelay: "0.15s" }}
+    >
       <SectionLabel icon={Briefcase}>Professional Experience</SectionLabel>
       <div className="space-y-6">
         {experience.map((job) => (

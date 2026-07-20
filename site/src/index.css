@@ -52,6 +52,41 @@ body {
   );
 }
 
+/*
+ * Entrance animation. Plays once on mount (not scroll-triggered), so it can
+ * never leave content stuck invisible in a full-page screenshot, a PDF
+ * export, or with JS disabled after the animation's own end-state applies.
+ * `both` fill-mode holds the final (visible) frame after it finishes.
+ */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.7s ease both;
+}
+
+@keyframes ring-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(var(--color-accent) / 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgb(var(--color-accent) / 0);
+  }
+}
+
+.ring-pulse {
+  animation: ring-pulse 2.8s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -59,5 +94,14 @@ body {
   * {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Belt and suspenders: printed/exported PDFs always show final state. */
+@media print {
+  * {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

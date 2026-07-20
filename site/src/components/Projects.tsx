@@ -4,13 +4,17 @@ import SectionLabel from "./SectionLabel";
 
 export default function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-sheet px-8 py-16">
+    <section
+      id="projects"
+      className="fade-up mx-auto max-w-sheet px-8 py-16"
+      style={{ animationDelay: "0.3s" }}
+    >
       <SectionLabel icon={Rocket}>Featured Projects</SectionLabel>
       <div className="grid gap-6">
         {projects.map((p) => (
           <article
             key={p.name}
-            className="overflow-hidden rounded-2xl border border-rule bg-paper-raised shadow-sm"
+            className="overflow-hidden rounded-2xl border border-rule bg-paper-raised shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
           >
             <div className="gradient-accent p-6 text-white sm:p-7">
               <p className="font-sans text-xs font-semibold uppercase tracking-wide text-white/80">

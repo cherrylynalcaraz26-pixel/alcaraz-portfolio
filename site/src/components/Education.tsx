@@ -4,7 +4,7 @@ import SectionLabel from "./SectionLabel";
 
 export default function Education() {
   return (
-    <section className="mx-auto max-w-sheet px-8 py-16">
+    <section className="fade-up mx-auto max-w-sheet px-8 py-16" style={{ animationDelay: "0.4s" }}>
       <SectionLabel icon={GraduationCap}>Education &amp; Professional Development</SectionLabel>
       <div className="grid gap-6 sm:grid-cols-2">
         <div className="rounded-2xl border border-rule bg-paper-raised p-6">

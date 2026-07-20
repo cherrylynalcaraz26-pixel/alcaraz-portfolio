@@ -4,7 +4,11 @@ import SectionLabel from "./SectionLabel";
 
 export default function Dashboard() {
   return (
-    <section id="dashboard" className="mx-auto max-w-sheet px-8 py-16">
+    <section
+      id="dashboard"
+      className="fade-up mx-auto max-w-sheet px-8 py-16"
+      style={{ animationDelay: "0.05s" }}
+    >
       <SectionLabel icon={LayoutDashboard}>Executive Dashboard</SectionLabel>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
         {dashboard.map((d) => (

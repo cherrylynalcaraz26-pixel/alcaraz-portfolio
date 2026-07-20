@@ -10,6 +10,7 @@ export const profile = {
   phone: "0961-627-1745",
   email: "cherrylyn.alcaraz26@gmail.com",
   linkedin: null as string | null, // pending
+  photo: null as string | null, // pending — drop the file at site/public/photo.jpg and set this to "/photo.jpg"
 };
 
 export const dashboard = [
