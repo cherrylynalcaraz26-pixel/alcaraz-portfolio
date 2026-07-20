@@ -61,30 +61,82 @@ body {
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(34px) scale(0.97);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
 .fade-up {
-  animation: fade-up 0.7s ease both;
+  animation: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @keyframes ring-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgb(var(--color-accent) / 0.35);
+    box-shadow: 0 0 0 0 rgb(var(--color-accent) / 0.45);
   }
   50% {
-    box-shadow: 0 0 0 10px rgb(var(--color-accent) / 0);
+    box-shadow: 0 0 0 16px rgb(var(--color-accent) / 0);
   }
 }
 
 .ring-pulse {
-  animation: ring-pulse 2.8s ease-in-out infinite;
+  animation: ring-pulse 2.2s ease-in-out infinite;
+}
+
+/* Slow ambient drift on the hero's decorative background blobs. */
+@keyframes blob-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-24px, 28px) scale(1.12);
+  }
+}
+
+.blob-drift {
+  animation: blob-drift 10s ease-in-out infinite;
+}
+
+.blob-drift-reverse {
+  animation: blob-drift 13s ease-in-out infinite reverse;
+}
+
+/* Slow gradient sweep for a "live" feel on large gradient surfaces. */
+@keyframes gradient-sweep {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-accent-animated {
+  background-size: 200% 200%;
+  animation: gradient-sweep 6s ease infinite;
+}
+
+/* Underline draws in left-to-right once, after the fade-up settles. */
+@keyframes draw-line {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.draw-line {
+  transform-origin: left;
+  animation: draw-line 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @media (prefers-reduced-motion: reduce) {

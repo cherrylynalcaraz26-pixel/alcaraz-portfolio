@@ -10,7 +10,7 @@ export default function Leadership() {
       style={{ animationDelay: "0.35s" }}
     >
       <SectionLabel icon={Quote}>Leadership Philosophy</SectionLabel>
-      <div className="gradient-accent rounded-2xl p-8 text-white sm:p-10">
+      <div className="gradient-accent-animated rounded-2xl p-8 text-white sm:p-10">
         <Quote size={32} className="opacity-70" />
         <blockquote className="mt-4 max-w-[64ch] font-display text-xl font-medium leading-snug sm:text-2xl">
           {leadershipPhilosophy}

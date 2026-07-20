@@ -9,7 +9,7 @@ export default function Footer() {
       style={{ animationDelay: "0.45s" }}
     >
       <div className="mx-auto max-w-sheet">
-        <div className="gradient-accent rounded-2xl p-8 text-white sm:p-12">
+        <div className="gradient-accent-animated rounded-2xl p-8 text-white sm:p-12">
           <p className="font-display text-4xl font-extrabold sm:text-5xl">Let&rsquo;s talk.</p>
           <p className="mt-3 max-w-[50ch] text-white/85">
             Open to executive roles, board conversations, and business partnerships across
