@@ -16,12 +16,12 @@ export default {
         cdsc: "#E0480A",
       },
       fontFamily: {
-        display: ["Newsreader", "Georgia", "serif"],
-        sans: ["Inter", "-apple-system", "Segoe UI", "sans-serif"],
+        display: ["'Big Shoulders Display'", "'Arial Narrow'", "sans-serif"],
+        sans: ["'Public Sans'", "-apple-system", "Segoe UI", "sans-serif"],
         data: ["IBM Plex Mono", "ui-monospace", "SFMono-Regular", "monospace"],
       },
       maxWidth: {
-        sheet: "880px",
+        sheet: "960px",
       },
     },
   },

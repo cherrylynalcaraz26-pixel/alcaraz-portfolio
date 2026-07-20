@@ -1,9 +1,18 @@
-export default function SectionLabel({ children }: { children: React.ReactNode }) {
+export default function SectionLabel({
+  index,
+  children,
+}: {
+  index?: string;
+  children: React.ReactNode;
+}) {
   return (
-    <div className="mb-8 flex items-center gap-3.5">
-      <p className="font-data text-[11px] uppercase tracking-[0.16em] text-muted whitespace-nowrap">
+    <div className="mb-10 flex items-center gap-4">
+      {index && (
+        <span className="font-data text-xs tabular-nums text-accent">{index}</span>
+      )}
+      <span className="bg-ink px-3 py-1.5 font-display text-sm font-bold uppercase tracking-wide text-paper">
         {children}
-      </p>
+      </span>
       <span className="h-px flex-1 bg-rule" />
     </div>
   );

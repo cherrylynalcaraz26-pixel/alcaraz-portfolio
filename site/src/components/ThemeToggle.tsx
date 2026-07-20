@@ -16,7 +16,7 @@ export default function ThemeToggle() {
       onClick={() => setIsDark((v) => !v)}
       aria-pressed={isDark}
       aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
-      className="font-data text-[11px] uppercase tracking-[0.1em] text-muted hover:text-accent transition-colors border border-rule rounded-none px-3 py-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      className="border-2 border-ink font-data text-[11px] font-semibold uppercase tracking-[0.1em] text-ink px-3 py-1.5 transition-colors hover:bg-ink hover:text-paper focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
     >
       {isDark ? "Light" : "Dark"}
     </button>
