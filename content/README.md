@@ -37,9 +37,10 @@ I did not invent numbers anywhere the source material didn't already state one �
 | `executive-resume.md` | Premium one-page executive resume (designed version, achievement-driven) |
 | `executive-resume-ats.md` | Plain-text ATS-safe one-page resume (no graphics, for online applications) |
 | `curriculum-vitae.md` | Full chronological CV, no page limit, includes full project case studies |
-| `executive-profile-bio.md` | Two-page executive biography (narrative form) — title/facts current as of the previous round; ask if you want it re-synced with the Founder & President title and Featured Projects |
+| `executive-profile-bio.md` | Two-page executive biography (narrative form), synced with the Founder & President title and all four Featured Projects |
 | `business-portfolio.md` | Company profiles, competencies, technical skills matrix, quantified achievements, 4 project case studies, executive dashboard, leadership philosophy |
 | `design-guidelines.md` | Current live design system: Manrope/Inter, teal/gold palette, layout principles |
+| `recruiter-evaluation.md` | An honest external read on the portfolio — strengths, risks a skeptical reader will push on, and a prioritized action list |
 
 ## Live site
 
@@ -47,4 +48,4 @@ I did not invent numbers anywhere the source material didn't already state one �
 
 ## Recommended next step
 
-The project results (`[PLACEHOLDER: quantified outcome]` in each of the four Featured Projects) are the highest-leverage thing to send next — everything else is either done or a low-stakes placeholder.
+See `recruiter-evaluation.md` for a prioritized action list — in short: project results, then a live LinkedIn profile, then proof artifacts for the four systems. Everything else outstanding is a low-stakes placeholder.
