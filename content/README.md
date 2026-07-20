@@ -1,37 +1,46 @@
 # Cherrylyn Alcaraz — Executive Portfolio Package
 
-This folder contains the complete first draft of your executive portfolio deliverables. Everything is written at executive/investor-grade quality using what's currently confirmed about your background. Anywhere I don't have verified information, you'll see a bracketed placeholder like `[FLEET SIZE]` — fill those in and the copy is ready to go.
+This folder contains the executive portfolio deliverables, now built on your real resume data (name, contact info, all 5 business entities, professional experience, education, competencies). Remaining gaps are marked with bracketed placeholders like `[PLACEHOLDER: ...]`.
 
-## What's confirmed vs. what's a placeholder
+## What's confirmed and used throughout
 
-**Confirmed and used throughout:**
-- Name: Cherrylyn Alcaraz
-- Business: CHEM Tourist and Transport Services OPC — land transport / tourism logistics, serving corporate clients, operating a driver/dispatch network
+- Full contact details (Calamba, Laguna | phone | email)
+- All 5 business entities: CHEM Tourist and Transport Services OPC (owner, President & GM), Chef David Catering Services (manager, since 2013), CDSC Industrial Supply (manager), RBJ Seat Master Philippines Co. (bookkeeping client), BlueScale Integrated Business Support (consulting engagement)
+- Full professional experience, responsibilities, and stated achievements for all three roles
+- Core competencies, skills, education (City College of Laguna), and professional development
+- "What sets you apart" differentiators
 
-**Not yet provided — placeholders throughout the documents:**
-- Additional businesses you manage (names, industries, your role, founding year, status)
-- Business statistics: revenue, fleet size, employee/driver count, years in operation, client count, safety record
-- Education history
-- Certifications, licenses, professional memberships
-- Awards, media features, speaking engagements
-- Contact details (phone, email, LinkedIn, address)
-- Photo, brand colors (if you have existing brand colors, otherwise I've recommended a palette)
-- Named clients/case studies (kept generic/anonymized until you confirm what can be disclosed)
+## What's still a placeholder
 
-I did not invent numbers for revenue, fleet size, employee counts, or client names — this portfolio is meant for banks, government procurement, and investors, and fabricated figures would be a liability the moment anyone verifies them. Replace every placeholder with real figures before this goes out.
+- **LinkedIn URL / website / portfolio URL** — needed on every document's contact line
+- **Photo** — for the cover page
+- **Brand colors** — using the recommended palette in `design-guidelines.md` unless you have existing brand colors to match
+- **Exact figures** where your resume used qualifiers rather than numbers — e.g., number of corporate route contracts, exact revenue managed across the portfolio, exact % reduction in overtime/idle time from the dispatch restructure (this is your strongest ROI story — a specific number here would be high-impact)
+- **CDSC Industrial Supply founding year**
+- **Skills proficiency self-ratings** (1-5 scale) in `business-portfolio.md`
+- **"Lessons learned"** lines in the case studies — one sentence each, in your own words
+- **Awards, media features, speaking engagements, volunteer work, professional memberships** — left blank if none apply yet
+- **Forward-looking closing statement** in the executive profile bio — your current strategic priority (growth, accreditation goals, new service lines, etc.)
+- **Testimonials** — reserved layout, populate as available
+
+I did not invent numbers anywhere your resume didn't already state one — this portfolio is meant for banks, government procurement, and investors, and estimated figures would be a liability the moment anyone verifies them.
 
 ## Files in this package
 
 | File | Purpose |
 |---|---|
-| `personal-brand.md` | Brand statement, UVP, elevator pitch, taglines, LinkedIn headline, bios (100/300/600 words) |
+| `personal-brand.md` | Brand statement, UVP, elevator pitch, LinkedIn headline, bios (100/300/600 words) |
 | `executive-resume.md` | Premium one-page executive resume (designed version, achievement-driven) |
 | `executive-resume-ats.md` | Plain-text ATS-safe one-page resume (no graphics, for online applications) |
 | `curriculum-vitae.md` | Full chronological CV, no page limit |
 | `executive-profile-bio.md` | Two-page executive biography (narrative form, for cover page / about section) |
-| `business-portfolio.md` | Company profile(s), core competencies matrix, quantified achievements template, case study template, leadership philosophy, professional values, executive dashboard |
-| `design-guidelines.md` | Fonts, color palette, layout, print/PDF specs to turn this into the final visual document |
+| `business-portfolio.md` | Company profiles, core competencies matrix, quantified achievements, 3 case studies, executive dashboard, leadership philosophy |
+| `design-guidelines.md` | Fonts, color palette, layout, print/PDF specs for the final visual document |
+
+## Visual preview
+
+A design mockup of the cover page and executive dashboard (typography, color, layout direction) is available as a live preview — ask if you'd like the link resent, or an updated version now that real figures are in.
 
 ## Recommended next step
 
-Send me the missing data points above (even rough numbers) and I'll do a full pass to replace every placeholder, then produce the final polished PDF-ready layout and visual dashboard.
+Send the remaining placeholders above (even rough numbers for the ones you have) and I'll do a final pass to close every gap, then move to the finished visual/PDF layout.
