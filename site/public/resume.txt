@@ -1,0 +1,56 @@
+CHERRYLYN MANTALA ALCARAZ
+Founder & President — CHEM Tourist and Transport Services OPC
+Business Owner | Operations Executive | Transport & Fleet Management Specialist | Procurement & Supply Chain Consultant | ERP & Business Systems Strategist
+Calamba, Laguna, Philippines | 0961-627-1745 | cherrylyn.alcaraz26@gmail.com
+
+EXECUTIVE SUMMARY
+Operator-level executive with 9+ years building and running multiple business entities simultaneously — corporate transport, food service concession, industrial supply, and financial/ERP systems consulting. Founder and President of CHEM Tourist and Transport Services OPC, a corporate shuttle and fleet company operating 16+ vehicles across CALABARZON with zero major LTO, LTFRB, or BIR compliance violations. Designs and builds the software systems her businesses and clients run on, including a purpose-built transport management platform and a multi-branch ERP.
+
+CORE COMPETENCIES
+Executive & Operations: Executive Leadership, Business Strategy, Operations Management, Fleet & Transport Management, Risk Management, Contract Management, Compliance (LTO/LTFRB/BIR), People Leadership, Corporate Communication
+Procurement & Finance: Strategic Sourcing, Supplier Evaluation & Negotiation, Cost Control, Multi-Entity Bookkeeping, Financial Reporting & Analysis, Payroll Administration, Cash Flow Monitoring, Contract & Vendor Negotiation
+Systems & Technology: ERP System Design, Business Intelligence Dashboards, Workflow Automation, Fleet & GPS Systems, CRM & POS Systems, Database Management, Google Workspace Automation, Business Process Improvement
+
+PROFESSIONAL EXPERIENCE
+
+Founder & President, CHEM Tourist and Transport Services OPC — 2022 to Present
+- Founded and leads full-scope operations of a corporate B2B shuttle and fleet company with 16+ vehicles serving industrial clients across CALABARZON
+- Maintained zero major compliance violations across LTO, LTFRB, and BIR documentation requirements
+- Negotiated and maintained long-term transport contracts with corporate industrial clients
+- Designed and deployed the CHEM Transport Management System (see Featured Projects)
+- Restructured scheduling and dispatch to reduce overtime and idle vehicle time
+- Administered payroll and government-mandated benefits for drivers and operational staff
+
+Bookkeeping & Compliance Consultant, Freelance - Multiple SME Clients — 2024 to Present
+- Designed complete bookkeeping infrastructure for RBJ Seat Master Philippines Co. across 4 branches (GMA region)
+- Built a payroll dashboard with full Philippine statutory deduction logic (SSS, PhilHealth, Pag-IBIG, withholding tax)
+- Created a consignment reconciliation system for CDSC Industrial Supply
+
+Procurement & ERP Systems Consultant, BlueScale Integrated Business Support — 2025 to Present
+- Lead supplier evaluation, negotiation, and purchase planning for business owner clients
+- Design and build ERP, CRM, and dashboard analytics systems, including the BlueScale Procurement Platform
+
+FEATURED PROJECTS
+CHEM Transport Management System — Fleet management, trip/fuel monitoring, payroll, accounting, CRM, maintenance, GPS, scheduling, analytics, role-based access. Stack: React, Supabase, SQL, Google Apps Script.
+RBJ ERP System — Multi-branch inventory, sales, accounting, POS, payroll, manufacturing coordination, supplier management. Stack: React, Next.js, Supabase, SQL.
+BlueScale Procurement Platform — Supplier portal, quotation and PO management, vendor database, document management. Stack: React, Next.js, Supabase, REST API.
+Executive Business Dashboard — Cross-business financial and operational KPIs, fleet and payroll analytics, profitability view. Stack: React, Google Apps Script, SQL.
+
+BUSINESS PORTFOLIO
+CHEM Tourist and Transport Services OPC - Founder & President - Corporate shuttle & fleet, 16+ vehicles, CALABARZON
+Chef David Catering Services - Manager - Industrial park food concession, since 2013
+CDSC Industrial Supply - Manager - B2B industrial & facility supply
+RBJ Seat Master Philippines Co. - Bookkeeping & Compliance Client - Automotive accessories, 4 branches, GMA region
+BlueScale Integrated Business Support - Procurement & ERP Systems Consultant - Business systems consulting
+
+TECHNICAL SKILLS
+Business Systems: ERP, CRM, Fleet Management, Payroll, Inventory, Accounting, Dashboard Analytics
+Programming: React, Next.js, JavaScript, PHP, Python, HTML, CSS, Tailwind CSS, SQL, MySQL, Supabase, REST API, Google Apps Script, Git, GitHub, Vercel
+Business Software: Microsoft 365, Google Workspace, Excel, Google Sheets
+
+EDUCATION
+Technical & Vocational Education, City College of Laguna
+Xero Advisor Certification - In Progress
+
+REFERENCES
+Available upon request.

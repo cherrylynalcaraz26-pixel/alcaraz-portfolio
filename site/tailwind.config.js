@@ -8,6 +8,8 @@ export default {
         ink: "rgb(var(--color-ink) / <alpha-value>)",
         paper: "rgb(var(--color-paper) / <alpha-value>)",
         "paper-raised": "rgb(var(--color-paper-raised) / <alpha-value>)",
+        primary: "rgb(var(--color-primary) / <alpha-value>)",
+        secondary: "rgb(var(--color-secondary) / <alpha-value>)",
         accent: "rgb(var(--color-accent) / <alpha-value>)",
         "accent-soft": "rgb(var(--color-accent-soft) / <alpha-value>)",
         muted: "rgb(var(--color-muted) / <alpha-value>)",
@@ -16,8 +18,8 @@ export default {
         cdsc: "#E0480A",
       },
       fontFamily: {
-        display: ["'Big Shoulders Display'", "'Arial Narrow'", "sans-serif"],
-        sans: ["'Public Sans'", "-apple-system", "Segoe UI", "sans-serif"],
+        display: ["Manrope", "-apple-system", "Segoe UI", "sans-serif"],
+        sans: ["Inter", "-apple-system", "Segoe UI", "sans-serif"],
         data: ["IBM Plex Mono", "ui-monospace", "SFMono-Regular", "monospace"],
       },
       maxWidth: {

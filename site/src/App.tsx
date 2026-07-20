@@ -5,6 +5,7 @@ import Competencies from "./components/Competencies";
 import Experience from "./components/Experience";
 import Timeline from "./components/Timeline";
 import BusinessPortfolio from "./components/BusinessPortfolio";
+import Projects from "./components/Projects";
 import Leadership from "./components/Leadership";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
@@ -20,6 +21,7 @@ export default function App() {
         <Experience />
         <Timeline />
         <BusinessPortfolio />
+        <Projects />
         <Leadership />
         <Education />
       </main>

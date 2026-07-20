@@ -1,53 +1,50 @@
 # Cherrylyn Alcaraz — Executive Portfolio Package
 
-This folder contains the executive portfolio deliverables, now built on your real resume data (name, contact info, all 5 business entities, professional experience, education, competencies). Remaining gaps are marked with bracketed placeholders like `[PLACEHOLDER: ...]`.
+This folder contains the executive portfolio deliverables. Remaining gaps are marked with bracketed placeholders like `[PLACEHOLDER: ...]`.
 
 ## What's confirmed and used throughout
 
 - Full contact details (Calamba, Laguna | phone | email)
-- All 5 business entities: CHEM Tourist and Transport Services OPC (owner, President & GM), Chef David Catering Services (manager, since 2013), CDSC Industrial Supply (manager), RBJ Seat Master Philippines Co. (bookkeeping client), BlueScale Integrated Business Support (consulting engagement)
+- Title: **Founder & President**, CHEM Tourist and Transport Services OPC
+- All 5 business entities: CHEM Tourist and Transport Services OPC (Founder & President), Chef David Catering Services (manager, since 2013), CDSC Industrial Supply (manager), RBJ Seat Master Philippines Co. (bookkeeping & compliance **client** — confirmed as a service relationship, not a partnership), BlueScale Integrated Business Support (Procurement & ERP Systems Consultant)
 - Full professional experience, responsibilities, and stated achievements for all three roles
-- Core competencies, skills, education (City College of Laguna), and professional development
-- "What sets you apart" differentiators
+- **Four Featured Projects** — CHEM Transport Management System, RBJ ERP System, BlueScale Procurement Platform, Executive Business Dashboard — confirmed as real, coded systems (React/Next.js/Supabase/SQL/Google Apps Script), written up as full case studies
+- Expanded technical skills (React, Next.js, PHP, Python, SQL, Supabase, etc.) — confirmed as real proficiencies
+- Core competencies, education (City College of Laguna), and professional development
+
+## A note on what changed in this round
+
+A later brief asked for "Managing Partner, RBJ Seat Master Philippines" and described the four Featured Projects as built software. Both were confirmed with you directly before I wrote anything: RBJ stays a **client** relationship (no equity language used anywhere), and the four projects are real, so they're now written up as genuine engineering case studies with an honest stack list. I did not silently adopt either claim without checking — for something going to banks, investors, and government procurement, an unverifiable ownership or engineering claim is a bigger risk than a placeholder.
 
 ## What's still a placeholder
 
 - **LinkedIn URL / website / portfolio URL** — needed on every document's contact line
-- **Photo** — you sent both company logos (CHEM Tourist and CDSC Industrial Supply, now in `/assets`), not a headshot. The cover design works without one — see the typographic-cover note in `design-guidelines.md` — so this isn't blocking, just something to add later if you want it.
-- **Exact figures** where your resume used qualifiers rather than numbers — e.g., number of corporate route contracts, exact revenue managed across the portfolio, exact % reduction in overtime/idle time from the dispatch restructure (this is your strongest ROI story — a specific number here would be high-impact)
-- **CDSC Industrial Supply founding year**
+- **Photo** — you sent both company logos, not a headshot. The design works without one (typographic hero) — not blocking.
+- **Project results** — each of the four Featured Projects has a `[PLACEHOLDER: quantified outcome]` — this is the single highest-impact gap left. A real number (time saved, error reduction, adoption) for even one project would meaningfully strengthen the whole portfolio.
+- **Exact figures** — corporate client count, revenue managed, % reduction in overtime/idle time from the dispatch restructure, CDSC Industrial Supply founding year
 - **Skills proficiency self-ratings** (1-5 scale) in `business-portfolio.md`
-- **"Lessons learned"** lines in the case studies — one sentence each, in your own words
-- **Awards, media features, speaking engagements, volunteer work, professional memberships** — left blank if none apply yet
-- **Forward-looking closing statement** in the executive profile bio — your current strategic priority (growth, accreditation goals, new service lines, etc.)
+- **"Lessons learned"** lines in the project case studies
+- **Awards, media features, speaking engagements, volunteer work, professional memberships**
 - **Testimonials** — reserved layout, populate as available
 
-I did not invent numbers anywhere your resume didn't already state one — this portfolio is meant for banks, government procurement, and investors, and estimated figures would be a liability the moment anyone verifies them.
+I did not invent numbers anywhere the source material didn't already state one — estimated figures would be a liability the moment anyone verifies them.
 
 ## Files in this package
 
 | File | Purpose |
 |---|---|
-| `personal-brand.md` | Brand statement, UVP, elevator pitch, LinkedIn headline, bios (100/300/600 words) |
+| `personal-brand.md` | Brand statement, UVP, elevator pitches (30s/60s), LinkedIn headline, speaking intro, email signature, bios, SEO/metadata |
 | `executive-resume.md` | Premium one-page executive resume (designed version, achievement-driven) |
 | `executive-resume-ats.md` | Plain-text ATS-safe one-page resume (no graphics, for online applications) |
-| `curriculum-vitae.md` | Full chronological CV, no page limit |
-| `executive-profile-bio.md` | Two-page executive biography (narrative form, for cover page / about section) |
-| `business-portfolio.md` | Company profiles, core competencies matrix, quantified achievements, 3 case studies, executive dashboard, leadership philosophy |
-| `design-guidelines.md` | Fonts, color palette, layout, print/PDF specs for the final visual document |
-
-## Brand assets
-
-`/assets/chem-logo.png` and `/assets/cdsc-logo.jpg` — your two company logos. The portfolio's accent color (a refined brass/gold) is derived from the CHEM Tourist logo's gold tones; CDSC's orange is used only within its own profile block. Full rationale in `design-guidelines.md`.
+| `curriculum-vitae.md` | Full chronological CV, no page limit, includes full project case studies |
+| `executive-profile-bio.md` | Two-page executive biography (narrative form) — title/facts current as of the previous round; ask if you want it re-synced with the Founder & President title and Featured Projects |
+| `business-portfolio.md` | Company profiles, competencies, technical skills matrix, quantified achievements, 4 project case studies, executive dashboard, leadership philosophy |
+| `design-guidelines.md` | Current live design system: Manrope/Inter, teal/gold palette, layout principles |
 
 ## Live site
 
-`/site` is a real React + Tailwind CSS implementation of this portfolio (Vite, TypeScript), built on this same content — see `site/README.md` for design rationale and how to run it. All copy lives in one file, `site/src/data/portfolio.ts`, so updating a fact updates every section at once.
-
-## Visual preview
-
-A design mockup of the cover page and executive dashboard, now styled with the gold accent pulled from your CHEM Tourist logo, is available as a live preview — ask if you'd like the link resent.
+`/site` is a React + Tailwind CSS implementation (Vite, TypeScript) — now redesigned twice: first to a bold industrial direction, then to the premium modern-corporate teal/gold/glassmorphism system specified in the latest brief, including a new **Featured Projects** section. See `site/README.md`. All copy lives in `site/src/data/portfolio.ts`, so updating a fact updates every section at once. A plain-text resume download is served at `/resume.txt`.
 
 ## Recommended next step
 
-Send the remaining placeholders above (even rough numbers for the ones you have) and I'll do a final pass to close every gap, then move to the finished visual/PDF layout.
+The project results (`[PLACEHOLDER: quantified outcome]` in each of the four Featured Projects) are the highest-leverage thing to send next — everything else is either done or a low-stakes placeholder.

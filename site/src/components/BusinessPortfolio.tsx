@@ -1,3 +1,4 @@
+import { Building2 } from "lucide-react";
 import { businesses, type BusinessEntity } from "../data/portfolio";
 import SectionLabel from "./SectionLabel";
 
@@ -6,6 +7,13 @@ const relationshipLabel: Record<BusinessEntity["relationship"], string> = {
   managed: "Manager",
   client: "Client",
   consulting: "Consultant",
+};
+
+const relationshipStyle: Record<BusinessEntity["relationship"], string> = {
+  owned: "bg-primary/10 text-primary",
+  managed: "bg-secondary/10 text-secondary",
+  client: "bg-accent/15 text-accent",
+  consulting: "bg-cdsc/10 text-cdsc",
 };
 
 function initials(name: string) {
@@ -17,57 +25,57 @@ function initials(name: string) {
     .join("");
 }
 
-function BusinessCard({ b, index }: { b: BusinessEntity; index: number }) {
-  const isCdsc = b.name.includes("CDSC");
+function BusinessCard({ b }: { b: BusinessEntity }) {
   return (
-    <article className="relative border-2 border-ink bg-paper p-6 pt-9">
-      <span className="absolute left-0 top-0 bg-ink px-2.5 py-1 font-data text-xs font-bold text-paper">
-        {String(index + 1).padStart(2, "0")}
-      </span>
-      <span
-        className={
-          "absolute right-5 top-4 -rotate-3 whitespace-nowrap border-2 px-2.5 py-1 font-data text-[10px] font-bold uppercase tracking-[0.08em] " +
-          (isCdsc ? "border-cdsc text-cdsc" : "border-accent text-accent")
-        }
-      >
-        {relationshipLabel[b.relationship]}
-      </span>
-
-      <div className="flex items-center gap-4">
-        {b.logo ? (
-          <img
-            src={b.logo}
-            alt={`${b.name} logo`}
-            className="h-12 w-12 shrink-0 border border-rule bg-white object-contain p-1"
-          />
-        ) : (
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center border-2 border-ink font-display text-base font-bold text-ink">
-            {initials(b.name)}
+    <article className="overflow-hidden rounded-2xl border border-rule bg-paper-raised shadow-sm">
+      <div className="gradient-accent h-1.5 w-full" />
+      <div className="p-6">
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            {b.logo ? (
+              <img
+                src={b.logo}
+                alt={`${b.name} logo`}
+                className="h-11 w-11 shrink-0 rounded-xl border border-rule bg-white object-contain p-1"
+              />
+            ) : (
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-paper font-display text-sm font-bold text-primary">
+                {initials(b.name)}
+              </span>
+            )}
+            <div>
+              <h3 className="font-display text-lg font-bold leading-tight text-ink">{b.name}</h3>
+              <p className="font-sans text-[11.5px] font-medium uppercase tracking-wide text-muted">
+                {b.industry}
+              </p>
+            </div>
+          </div>
+          <span
+            className={
+              "shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 font-sans text-[10.5px] font-bold uppercase tracking-wide " +
+              relationshipStyle[b.relationship]
+            }
+          >
+            {relationshipLabel[b.relationship]}
           </span>
-        )}
-        <div>
-          <h3 className="font-display text-xl font-bold leading-tight text-ink">{b.name}</h3>
-          <p className="font-data text-[11px] uppercase tracking-[0.05em] text-muted">
-            {b.industry}
-          </p>
         </div>
-      </div>
 
-      <p className="mt-4 text-[13.5px] leading-relaxed text-ink">{b.description}</p>
-      <p className="mt-4 border-t border-rule pt-3 font-data text-[11px] text-muted">
-        {b.role} · Since {b.since}
-      </p>
+        <p className="mt-4 text-[13.5px] leading-relaxed text-ink/90">{b.description}</p>
+        <p className="mt-4 border-t border-rule pt-3 font-data text-[11px] text-muted">
+          {b.role} · Since {b.since}
+        </p>
+      </div>
     </article>
   );
 }
 
 export default function BusinessPortfolio() {
   return (
-    <section id="businesses" className="mx-auto max-w-sheet border-t-2 border-ink px-8 py-16">
-      <SectionLabel>Business Portfolio</SectionLabel>
-      <div className="grid gap-6 sm:grid-cols-2">
-        {businesses.map((b, i) => (
-          <BusinessCard key={b.name} b={b} index={i} />
+    <section id="businesses" className="mx-auto max-w-sheet px-8 py-16">
+      <SectionLabel icon={Building2}>Business Portfolio</SectionLabel>
+      <div className="grid gap-5 sm:grid-cols-2">
+        {businesses.map((b) => (
+          <BusinessCard key={b.name} b={b} />
         ))}
       </div>
     </section>
