@@ -1,19 +1,16 @@
-import type { LucideIcon } from "lucide-react";
-
 export default function SectionLabel({
-  icon: Icon,
+  index,
   children,
 }: {
-  icon: LucideIcon;
+  index: string;
   children: React.ReactNode;
 }) {
   return (
-    <div className="mb-10 flex items-center gap-3">
-      <span className="gradient-accent flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-white shadow-sm">
-        <Icon size={17} strokeWidth={2.25} />
-      </span>
-      <h2 className="font-display text-lg font-bold tracking-tight text-ink">{children}</h2>
-      <span className="h-px flex-1 bg-rule" />
+    <div className="mb-10 flex items-baseline gap-4 border-b border-ink pb-3">
+      <span className="font-data text-xs text-accent">{index}</span>
+      <h2 className="font-display text-sm font-bold uppercase tracking-[0.14em] text-ink">
+        {children}
+      </h2>
     </div>
   );
 }

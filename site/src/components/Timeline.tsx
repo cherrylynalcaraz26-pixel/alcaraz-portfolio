@@ -1,30 +1,25 @@
-import { Clock } from "lucide-react";
 import { timeline } from "../data/portfolio";
 import SectionLabel from "./SectionLabel";
 
 export default function Timeline() {
   return (
     <section className="fade-up mx-auto max-w-sheet px-8 py-16" style={{ animationDelay: "0.2s" }}>
-      <SectionLabel icon={Clock}>Professional Timeline</SectionLabel>
-      <div className="-mx-8 overflow-x-auto px-8 pb-2">
-        <ol className="flex min-w-max gap-5">
-          {timeline.map((t) => (
-            <li
-              key={t.year}
-              className="w-72 shrink-0 rounded-2xl border border-rule bg-paper-raised p-6"
-            >
-              <span className="gradient-accent inline-block rounded-full px-3 py-1 font-data text-xs font-bold text-white">
-                {t.year}
-              </span>
-              <p className="mt-4 font-display text-lg font-bold leading-snug text-ink">
-                {t.title}
+      <SectionLabel index="04">Professional Timeline</SectionLabel>
+      <div className="divide-y divide-rule border-t border-ink">
+        {timeline.map((t) => (
+          <div key={t.year} className="grid gap-2 py-6 sm:grid-cols-[140px_1fr] sm:gap-8">
+            <p className="font-display text-3xl font-black tabular-nums leading-none text-ink">
+              {t.year}
+            </p>
+            <div>
+              <p className="font-display text-base font-bold leading-snug text-ink">{t.title}</p>
+              <p className="mt-1.5 max-w-[62ch] font-serif text-sm leading-relaxed text-muted">
+                {t.desc}
               </p>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{t.desc}</p>
-            </li>
-          ))}
-        </ol>
+            </div>
+          </div>
+        ))}
       </div>
-      <p className="mt-3 font-sans text-xs text-tbd sm:hidden">Scroll for more →</p>
     </section>
   );
 }

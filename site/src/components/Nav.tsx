@@ -11,19 +11,19 @@ const links = [
 
 export default function Nav() {
   return (
-    <header className="glass sticky top-0 z-10 border-b border-x-0 border-t-0">
-      <div className="mx-auto flex max-w-sheet items-center justify-between px-8 py-3.5">
-        <a href="#top" className="font-display text-lg font-extrabold tracking-tight text-ink">
-          Cherrylyn <span className="gradient-accent bg-clip-text text-transparent">Alcaraz</span>
+    <header className="sticky top-0 z-10 border-b border-ink bg-paper">
+      <div className="mx-auto flex max-w-sheet items-center justify-between px-8 py-4">
+        <a href="#top" className="font-display text-base font-bold uppercase tracking-tight text-ink">
+          Alcaraz
         </a>
-        <nav className="hidden items-center gap-6 lg:flex">
-          {links.map((l) => (
+        <nav className="hidden items-center gap-7 lg:flex">
+          {links.map((l, i) => (
             <a
               key={l.href}
               href={l.href}
-              className="font-sans text-[13px] font-medium text-muted transition-colors hover:text-primary"
+              className="font-data text-[11px] uppercase tracking-[0.1em] text-muted transition-colors hover:text-accent"
             >
-              {l.label}
+              <span className="text-accent">0{i + 1}</span> {l.label}
             </a>
           ))}
         </nav>

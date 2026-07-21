@@ -1,22 +1,22 @@
-import { Layers } from "lucide-react";
 import { competencyGroups } from "../data/portfolio";
 import SectionLabel from "./SectionLabel";
 
 export default function Competencies() {
   return (
     <section className="fade-up mx-auto max-w-sheet px-8 py-16" style={{ animationDelay: "0.1s" }}>
-      <SectionLabel icon={Layers}>Core Competencies</SectionLabel>
-      <div className="grid gap-8 sm:grid-cols-3">
-        {competencyGroups.map((group) => (
-          <div key={group.category} className="rounded-2xl border border-rule bg-paper-raised p-5">
-            <h3 className="mb-4 font-display text-sm font-bold uppercase tracking-wide text-secondary">
-              {group.category}
+      <SectionLabel index="02">Core Competencies</SectionLabel>
+      <div className="grid gap-10 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-ink">
+        {competencyGroups.map((group, i) => (
+          <div key={group.category} className="sm:px-8 sm:first:pl-0 sm:last:pr-0">
+            <h3 className="mb-4 flex items-baseline gap-2 font-data text-xs uppercase tracking-[0.08em] text-accent">
+              <span>0{i + 1}</span>
+              <span className="text-ink">{group.category}</span>
             </h3>
-            <ul className="flex flex-wrap gap-2">
+            <ul>
               {group.items.map((item) => (
                 <li
                   key={item}
-                  className="rounded-full border border-rule bg-paper px-3 py-1 text-[12.5px] font-medium text-ink"
+                  className="border-b border-rule py-2 text-[13.5px] leading-snug text-ink last:border-b-0"
                 >
                   {item}
                 </li>

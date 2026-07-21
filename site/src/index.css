@@ -2,31 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* RGB triplets (not hex) so Tailwind's color-opacity modifiers, e.g. bg-paper/90, work. */
+/*
+ * Institutional / editorial system: near-monochrome (ink/paper) with a
+ * single precise gold accent, pulled from the CHEM Tourist logo but used
+ * sparingly — a rule, a numeral, an underline — never as a fill or gradient.
+ * RGB triplets (not hex) so Tailwind's color-opacity modifiers work.
+ */
 :root {
-  --color-ink: 15 23 42; /* slate-900, doubles as the spec's dark background used as light-mode text */
-  --color-paper: 248 250 252; /* #F8FAFC, spec light background */
-  --color-paper-raised: 234 240 244;
-  --color-primary: 11 93 122; /* #0B5D7A */
-  --color-secondary: 15 118 110; /* #0F766E */
-  --color-accent: 212 160 23; /* #D4A017 */
-  --color-accent-soft: 232 184 74;
-  --color-muted: 100 116 139; /* #64748B */
-  --color-rule: 215 222 229;
-  --color-tbd: 163 174 187;
+  --color-ink: 10 10 10;
+  --color-paper: 250 250 250;
+  --color-paper-raised: 240 240 240;
+  --color-accent: 156 108 12; /* deep goldenrod, legible at body-text size */
+  --color-muted: 105 105 105;
+  --color-rule: 214 214 214;
+  --color-tbd: 168 168 168;
 }
 
 .dark {
-  --color-ink: 241 245 249;
-  --color-paper: 15 23 42; /* #0F172A, spec dark background */
-  --color-paper-raised: 26 36 54;
-  --color-primary: 41 167 209;
-  --color-secondary: 23 184 166;
-  --color-accent: 240 180 41;
-  --color-accent-soft: 246 206 114;
-  --color-muted: 148 163 184;
-  --color-rule: 38 52 73;
-  --color-tbd: 91 107 130;
+  --color-ink: 245 245 245;
+  --color-paper: 10 10 10;
+  --color-paper-raised: 22 22 22;
+  --color-accent: 212 175 55; /* brightened gold for contrast on dark */
+  --color-muted: 158 158 158;
+  --color-rule: 42 42 42;
+  --color-tbd: 92 92 92;
 }
 
 html {
@@ -37,19 +36,8 @@ body {
   font-feature-settings: "tnum" 1;
 }
 
-.glass {
-  background: rgb(var(--color-paper-raised) / 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgb(var(--color-rule) / 0.7);
-}
-
-.gradient-accent {
-  background-image: linear-gradient(
-    135deg,
-    rgb(var(--color-primary)),
-    rgb(var(--color-secondary))
-  );
+::selection {
+  background: rgb(var(--color-accent) / 0.25);
 }
 
 /*
@@ -57,74 +45,25 @@ body {
  * never leave content stuck invisible in a full-page screenshot, a PDF
  * export, or with JS disabled after the animation's own end-state applies.
  * `both` fill-mode holds the final (visible) frame after it finishes.
+ * Kept restrained here (small offset, no scale) to fit the institutional
+ * tone — motion should read as precise, not springy.
  */
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(34px) scale(0.97);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 }
 
 .fade-up {
-  animation: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fade-up 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-@keyframes ring-pulse {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgb(var(--color-accent) / 0.45);
-  }
-  50% {
-    box-shadow: 0 0 0 16px rgb(var(--color-accent) / 0);
-  }
-}
-
-.ring-pulse {
-  animation: ring-pulse 2.2s ease-in-out infinite;
-}
-
-/* Slow ambient drift on the hero's decorative background blobs. */
-@keyframes blob-drift {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    transform: translate(-24px, 28px) scale(1.12);
-  }
-}
-
-.blob-drift {
-  animation: blob-drift 10s ease-in-out infinite;
-}
-
-.blob-drift-reverse {
-  animation: blob-drift 13s ease-in-out infinite reverse;
-}
-
-/* Slow gradient sweep for a "live" feel on large gradient surfaces. */
-@keyframes gradient-sweep {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.gradient-accent-animated {
-  background-size: 200% 200%;
-  animation: gradient-sweep 6s ease infinite;
-}
-
-/* Underline draws in left-to-right once, after the fade-up settles. */
+/* Rule that draws in left-to-right once settled — a print/ledger motif. */
 @keyframes draw-line {
   from {
     transform: scaleX(0);
@@ -136,7 +75,7 @@ body {
 
 .draw-line {
   transform-origin: left;
-  animation: draw-line 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: draw-line 0.9s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 @media (prefers-reduced-motion: reduce) {

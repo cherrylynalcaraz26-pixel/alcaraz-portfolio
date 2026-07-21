@@ -1,103 +1,89 @@
-import { Sparkles, Building2, Rocket, Mail } from "lucide-react";
 import { profile } from "../data/portfolio";
 
 const positioningTags = profile.positioning.split(" · ");
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden border-b border-rule">
-      <div
-        aria-hidden="true"
-        className="blob-drift pointer-events-none absolute -top-40 right-[-10%] h-[520px] w-[520px] rounded-full opacity-30 blur-3xl"
-        style={{ background: "radial-gradient(circle, rgb(var(--color-primary)), transparent 70%)" }}
-      />
-      <div
-        aria-hidden="true"
-        className="blob-drift-reverse pointer-events-none absolute -bottom-32 left-[-10%] h-[420px] w-[420px] rounded-full opacity-25 blur-3xl"
-        style={{ background: "radial-gradient(circle, rgb(var(--color-accent)), transparent 70%)" }}
-      />
-
-      <div className="relative mx-auto grid max-w-sheet gap-10 px-8 pb-16 pt-16 sm:grid-cols-[1fr_260px] sm:items-center sm:gap-8 sm:pb-24 sm:pt-24">
+    <section id="top" className="border-b border-ink">
+      <div className="mx-auto grid max-w-sheet gap-10 px-8 pb-16 pt-14 sm:grid-cols-[1fr_260px] sm:gap-8 sm:pb-20 sm:pt-20">
         <div>
-          <div
-            className="fade-up mb-7 inline-flex items-center gap-2 rounded-full border border-rule bg-paper-raised px-3.5 py-1.5"
-            style={{ animationDelay: "0s", animationDuration: "0.7s" }}
+          <p
+            className="fade-up font-data text-xs uppercase tracking-[0.2em] text-muted"
+            style={{ animationDelay: "0s" }}
           >
-            <Sparkles size={13} className="text-accent" />
-            <span className="font-sans text-xs font-semibold uppercase tracking-wide text-muted">
-              Executive Portfolio
-            </span>
-          </div>
+            Executive Portfolio — No. 01
+          </p>
 
           <h1
-            className="fade-up text-balance font-display text-5xl font-extrabold leading-[1.05] tracking-tight text-ink sm:text-6xl"
-            style={{ animationDelay: "0.12s" }}
+            className="fade-up mt-5 text-balance font-display text-6xl font-black uppercase leading-[0.95] tracking-tight text-ink sm:text-7xl"
+            style={{ animationDelay: "0.08s" }}
           >
-            Cherrylyn Alcaraz
+            Cherrylyn
+            <br />
+            Alcaraz
           </h1>
+
+          <div
+            className="draw-line fade-up mt-6 h-px w-full bg-accent"
+            style={{ animationDelay: "0.35s" }}
+          />
+
           <p
-            className="fade-up mt-4 font-display text-xl font-bold text-primary sm:text-2xl"
-            style={{ animationDelay: "0.24s" }}
+            className="fade-up mt-6 font-serif text-xl italic text-ink"
+            style={{ animationDelay: "0.42s" }}
           >
             {profile.title}
           </p>
 
-          <div
-            className="fade-up mt-6 flex flex-wrap gap-2"
-            style={{ animationDelay: "0.36s" }}
+          <p
+            className="fade-up mt-4 font-data text-[11px] uppercase tracking-[0.08em] text-muted"
+            style={{ animationDelay: "0.5s" }}
           >
-            {positioningTags.map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full border border-rule bg-paper-raised px-3 py-1 font-sans text-[12.5px] font-medium text-muted"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
+            {positioningTags.join("  /  ")}
+          </p>
 
           <p
-            className="fade-up mt-7 max-w-[56ch] text-lg leading-relaxed text-ink/90"
-            style={{ animationDelay: "0.48s" }}
+            className="fade-up mt-7 max-w-[58ch] font-serif text-lg leading-relaxed text-ink"
+            style={{ animationDelay: "0.58s" }}
           >
             {profile.tagline}
           </p>
 
-          <div className="fade-up mt-9 flex flex-wrap gap-3" style={{ animationDelay: "0.6s" }}>
+          <div className="fade-up mt-9 flex flex-wrap items-center gap-x-7 gap-y-3" style={{ animationDelay: "0.66s" }}>
             <a
               href="/resume.txt"
               download
-              className="gradient-accent-animated rounded-lg px-5 py-2.5 font-sans text-sm font-semibold text-white shadow-sm transition-transform hover:scale-105"
+              className="border border-ink bg-ink px-5 py-2.5 font-data text-xs font-semibold uppercase tracking-[0.08em] text-paper transition-opacity hover:opacity-80"
             >
-              Download Executive Resume
+              Download Résumé
             </a>
             <a
               href="#businesses"
-              className="flex items-center gap-1.5 rounded-lg border border-rule px-5 py-2.5 font-sans text-sm font-semibold text-ink transition-colors hover:border-primary hover:text-primary"
+              className="font-data text-xs uppercase tracking-[0.08em] text-ink underline decoration-rule underline-offset-4 hover:decoration-accent"
             >
-              <Building2 size={15} /> View Businesses
+              View Businesses
             </a>
             <a
               href="#projects"
-              className="flex items-center gap-1.5 rounded-lg border border-rule px-5 py-2.5 font-sans text-sm font-semibold text-ink transition-colors hover:border-primary hover:text-primary"
+              className="font-data text-xs uppercase tracking-[0.08em] text-ink underline decoration-rule underline-offset-4 hover:decoration-accent"
             >
-              <Rocket size={15} /> Explore Projects
+              Explore Projects
             </a>
             <a
               href={`mailto:${profile.email}`}
-              className="flex items-center gap-1.5 rounded-lg border border-rule px-5 py-2.5 font-sans text-sm font-semibold text-ink transition-colors hover:border-primary hover:text-primary"
+              className="font-data text-xs uppercase tracking-[0.08em] text-ink underline decoration-rule underline-offset-4 hover:decoration-accent"
             >
-              <Mail size={15} /> Contact Me
+              Contact
             </a>
           </div>
 
           <div
-            className="fade-up mt-10 flex flex-wrap gap-x-8 gap-y-2 border-t border-rule pt-6 font-data text-[12.5px] text-muted"
-            style={{ animationDelay: "0.72s" }}
+            className="fade-up mt-10 flex flex-wrap gap-x-8 gap-y-2 border-t border-rule pt-6 font-data text-[12px] text-muted"
+            style={{ animationDelay: "0.74s" }}
           >
             <span>{profile.location}</span>
             <span>{profile.phone}</span>
-            <a href={`mailto:${profile.email}`} className="hover:text-primary">
+            <a href={`mailto:${profile.email}`} className="hover:text-accent">
               {profile.email}
             </a>
             <span className="italic text-tbd">
@@ -108,18 +94,16 @@ export default function Hero() {
 
         <div
           className="fade-up flex justify-center sm:justify-end"
-          style={{ animationDelay: "0.3s", animationDuration: "1.1s" }}
+          style={{ animationDelay: "0.2s", animationDuration: "0.8s" }}
         >
-          <div className="ring-pulse relative h-52 w-52 shrink-0 overflow-hidden rounded-3xl border-4 border-paper shadow-lg sm:h-64 sm:w-64">
+          <div className="relative h-52 w-52 shrink-0 border border-ink sm:h-64 sm:w-64">
+            <span className="absolute -left-px -top-px h-3 w-3 border-l-2 border-t-2 border-accent" />
+            <span className="absolute -bottom-px -right-px h-3 w-3 border-b-2 border-r-2 border-accent" />
             {profile.photo ? (
-              <img
-                src={profile.photo}
-                alt={profile.name}
-                className="h-full w-full object-cover"
-              />
+              <img src={profile.photo} alt={profile.name} className="h-full w-full object-cover" />
             ) : (
-              <div className="gradient-accent flex h-full w-full items-center justify-center">
-                <span className="font-display text-6xl font-extrabold text-white/90">CA</span>
+              <div className="flex h-full w-full items-center justify-center bg-paper-raised">
+                <span className="font-display text-6xl font-black text-ink">CA</span>
               </div>
             )}
           </div>
